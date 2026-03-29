@@ -29,6 +29,6 @@ public class Task {
 	}
 	
 	public void mark() {
-		this.finished = true;
+		this.finished = !this.finished;
 	}
 	}
