@@ -13,6 +13,19 @@ public void addTask(Task task) {
 	sortTasks();
 	
 }
+
+//delete a task
+public void deleteTask(int num)
+{
+	if(num >=0 && num < tasks.size()) {
+		tasks.remove(num);
+		
+		System.out.println("Task deleted");
+	}
+	else {
+		System.out.println("Invalid");
+	}
+}
 //display
 public void showTasks() {
 	

@@ -14,7 +14,7 @@ ToDo list = new ToDo();
 while(true)
 {
 	//gives the user the choice
-	System.out.println("\n1.Add Task\n2.ShowTasks\n3.Toggle Complete\n3.Exit");
+	System.out.println("\n1.Add Task\n2.ShowTasks\n3.Toggle Complete\n4.Delete Task\n.Exit");
 	int choice = scanner.nextInt();
 	scanner.nextLine();
 	
@@ -48,6 +48,16 @@ else if(choice ==3) {
 	num = num-1;
 	list.marked(num);
 }
+
+else if(choice ==4) {
+	list.showTasks();
+	
+	System.out.println("Enter task index to delete:");
+	int num = scanner.nextInt();
+	num = num-1;
+	list.deleteTask(num);
+}
+
 else {
 	
 	break;
