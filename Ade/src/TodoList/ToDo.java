@@ -15,6 +15,12 @@ public void addTask(Task task) {
 }
 //display
 public void showTasks() {
+	
+	if(tasks.isEmpty()){
+		System.out.println("No tasks yet.");
+		return;
+	}
+	
 	for(int i = 0; i<tasks.size(); i++) {
 	Task t = tasks.get(i);
 	System.out.println(i + ": " + t.getTitle() + "  | " + t.getPriority() + " | "  + t.date());
@@ -22,6 +28,6 @@ public void showTasks() {
 }
 //sorts
 private void sortTasks() {
-	
+	tasks.sort(new TaskComparator());
 }
 }

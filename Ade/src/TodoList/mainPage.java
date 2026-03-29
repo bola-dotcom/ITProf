@@ -10,7 +10,7 @@ public class mainPage {
 		String priority;
 		LocalDate date;
 Scanner scanner = new Scanner(System.in);
-
+ToDo list = new ToDo();
 while(true)
 {
 	//gives the user the choice
@@ -34,9 +34,10 @@ if(choice == 1) {
 	System.out.println("Due date (YYYY-MM-DD:");
 	 date = LocalDate.parse(scanner.nextLine());
 	
-	
+	list.addTask(new Task(title, priority, date));
 }
 else if(choice == 2) {
+	list.showTasks();
 }
 
 else {
