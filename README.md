@@ -11,4 +11,5 @@ This was done for other techniques as well.
 HOW IT WORKS; when  the code is ran you have 4 options, to add a task, to show a task, to toggle complete and to delete a task
 It is very straightforward, to toggle complete is to mark a task as completed
 When writing the date, make sure it is in the YYYY-MM-DD format
-<img width="173" height="118" alt="image" src="https://github.com/user-attachments/assets/b0be759c-d9ab-41e3-bfd3-105ad68f6646" />
+<img width="182" height="131" alt="image" src="https://github.com/user-attachments/assets/a1f409a0-e7d5-4c1c-8da5-69831600aa4c" />
+
