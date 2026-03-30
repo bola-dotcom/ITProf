@@ -10,8 +10,7 @@ private List<Task>tasks = new ArrayList<>();
 //to add a task which sorts it
 public void addTask(Task task) {
 	tasks.add(task);
-	sortTasks();
-	
+	sortTasks();	
 }
 
 //delete a task
@@ -19,13 +18,14 @@ public void deleteTask(int num)
 {
 	if(num >=0 && num < tasks.size()) {
 		tasks.remove(num);
-		
 		System.out.println("Task deleted");
 	}
+	
 	else {
 		System.out.println("Invalid");
 	}
 }
+
 //display
 public void showTasks() {
 	
@@ -43,8 +43,11 @@ public void showTasks() {
 private void sortTasks() {
 	tasks.sort(new TaskComparator());
 }
+
+//this method is what is used to mark tasks as completed
 public void marked(int num)
 {
+	
 	if(num >=0 && num < tasks.size()) {
 		Task task = tasks.get(num);
 		task.mark();
