@@ -14,7 +14,7 @@ ToDo list = new ToDo();
 while(true)
 {
 	//gives the user the choice
-	System.out.println("\n1.Add Task\n2.ShowTasks\n3.Toggle Complete\n4.Delete Task\n.Exit");
+	System.out.println("\n1.Add Task\n2.ShowTasks\n3.Toggle Complete\n4.Delete Task\n5.Exit");
 	int choice = scanner.nextInt();
 	scanner.nextLine();
 	
